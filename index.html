@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="../vendors/jquery-3.1.1.min.js" charset="utf-8"></script>
-    <script src="script.js" charset="utf-8"></script>
-    <title>Fruit Stand</title>
-  </head>
-  <body>
-    <h1>Fruit Stand</h1>
-    
-  </body>
+ <head>
+   <meta charset="utf-8">
+   <script src="vendors/jquery-3.1.1.min.js" charset="utf-8"></script>
+   <script src="script.js" charset="utf-8"></script>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <title>Fruit Stand</title>
+ </head>
+ <body>
+   <h1>Fruit Stand</h1>
+   <h2>Fruit For Sale Today</h2>
+   <div class="container">
+     <div class="row">
+       <div id="blank" class="col-sm-2"></div>
+       <div id="apples" class="col-sm-2">Apples</div>
+       <div id="oranges" class="col-sm-2">Kiwi</div>
+       <div id="bananas" class="col-sm-2">Mango</div>
+       <div id="grapes" class="col-sm-2">Grapes</div>
+     </div>
+     <div class="row">
+       <div id="marketPriceId" class="col-sm-2 marketPrice">Market Price</div>
+       <div id="applesMP" class="col-sm-2 marketPrice"></div>
+       <div id="orangesMP" class="col-sm-2 marketPrice"></div>
+       <div id="bananasMP" class="col-sm-2 marketPrice"></div>
+       <div id="grapesMP" class="col-sm-2 marketPrice"></div>
+     </div>
+     <div class="row">
+       <div id="averagePriceId" class="col-sm-2 averagePrice">Average Price</div>
+       <div id="applesAP" class="col-sm-2 averagePrice"></div>
+       <div id="orangesAP" class="col-sm-2 averagePrice"></div>
+       <div id="bananasAP" class="col-sm-2 averagePrice"></div>
+       <div id="grapesAP" class="col-sm-2 averagePrice"></div>
+     </div>
+     <div class="row">
+       <div id="purchaseItem" class="col-sm-2 purchaseItem">Purchase Item</div>
+       <button id='applesB'type="button" class="col-sm-2" name="buyApple">Buy Apple</button>
+       <button id='orangesB'type="button" class="col-sm-2" name="buyOrange">Buy Orange</button>
+       <button id='bananasB'type="button" class="col-sm-2" name="buyBanana">Buy Banana</button>
+       <button id='grapesB'type="button" class="col-sm-2" name="buyGrape">Buy Grape</button>
+     </div>
+   </div>
+   <div class="container">
+
+     <div class="row">
+       <div id="quantity" class="col-sm-2 ">My Fruit</div>
+       <div id="applesQ" class="col-sm-2"></div>
+       <div id="orangesQ" class="col-sm-2"></div>
+       <div id="bananasQ" class="col-sm-2"></div>
+       <div id="grapesQ" class="col-sm-2"></div>
+     </div>
+   </div>
+   <h3>My Cash</h3>
+   <div class="container">
+    <h4 id="myCash"></h4>
+  </div>
+ </body>
 </html>
